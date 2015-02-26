@@ -34,8 +34,8 @@ class ALTableViewController: UITableViewController {
             
             var labelValue = ""
             for j in 1...((random() % 30)+1) {
-                labelValue += " "
                 labelValue += words[random() % words.count]
+                labelValue += " "
             }
             labelValues.append(labelValue)
         }
