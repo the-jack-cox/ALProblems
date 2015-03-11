@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA059E861A7F9AC900442D30 /* ScrollViewExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */; };
+		FA1109FF1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */; };
+		FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */; };
 		FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABA239A1A92A18300373A76 /* ALTableViewCell.xib */; };
 		FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */; };
 		FABA23A01A92A3DE00373A76 /* ALTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA239F1A92A3DE00373A76 /* ALTableViewCell.swift */; };
@@ -18,6 +20,9 @@
 		FAED78191A63F3C70054BD81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAED78181A63F3C70054BD81 /* Images.xcassets */; };
 		FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAED781A1A63F3C70054BD81 /* LaunchScreen.xib */; };
 		FAED78281A63F3C70054BD81 /* ALProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED78271A63F3C70054BD81 /* ALProblemsTests.swift */; };
+		FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */; };
+		FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */; };
+		FAF5E9A01A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewExample.xib; sourceTree = "<group>"; };
+		FA1109FC1AAFB925000F282A /* ALProblems-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALProblems-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA1109FD1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+ConstraintID.h"; sourceTree = "<group>"; };
+		FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+ConstraintID.m"; sourceTree = "<group>"; };
+		FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebuggingDemoViewController.swift; sourceTree = "<group>"; };
 		FABA239A1A92A18300373A76 /* ALTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALTableViewCell.xib; sourceTree = "<group>"; };
 		FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTableViewController.swift; sourceTree = "<group>"; };
 		FABA239F1A92A3DE00373A76 /* ALTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTableViewCell.swift; sourceTree = "<group>"; };
@@ -46,6 +55,9 @@
 		FAED78211A63F3C70054BD81 /* ALProblemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALProblemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAED78261A63F3C70054BD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAED78271A63F3C70054BD81 /* ALProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALProblemsTests.swift; sourceTree = "<group>"; };
+		FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCollectionViewController.swift; sourceTree = "<group>"; };
+		FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSelfSizingCollectionCell.swift; sourceTree = "<group>"; };
+		FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALSelfSizingCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA443EE31AAB57920091446D /* Debugging */ = {
+			isa = PBXGroup;
+			children = (
+				FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */,
+			);
+			name = Debugging;
+			sourceTree = "<group>";
+		};
 		FABA239E1A92A1E500373A76 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,15 +117,20 @@
 		FAED780C1A63F3C70054BD81 /* ALProblems */ = {
 			isa = PBXGroup;
 			children = (
+				FA443EE31AAB57920091446D /* Debugging */,
 				FAED780F1A63F3C70054BD81 /* AppDelegate.swift */,
 				FAED78111A63F3C70054BD81 /* ScrollViewController.swift */,
 				FAED78131A63F3C70054BD81 /* HuggingViewController.swift */,
 				FAED78151A63F3C70054BD81 /* Main.storyboard */,
 				FAED78181A63F3C70054BD81 /* Images.xcassets */,
+				FAF5E9981A9FC51B00853BB7 /* Collections */,
 				FABA239E1A92A1E500373A76 /* TableViews */,
 				FAED781A1A63F3C70054BD81 /* LaunchScreen.xib */,
 				FAED780D1A63F3C70054BD81 /* Supporting Files */,
 				FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */,
+				FA1109FD1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.h */,
+				FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */,
+				FA1109FC1AAFB925000F282A /* ALProblems-Bridging-Header.h */,
 			);
 			path = ALProblems;
 			sourceTree = "<group>";
@@ -133,6 +158,16 @@
 				FAED78261A63F3C70054BD81 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF5E9981A9FC51B00853BB7 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */,
+				FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */,
+				FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */,
+			);
+			name = Collections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +219,7 @@
 				TargetAttributes = {
 					FAED78091A63F3C70054BD81 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 3Q4M6DQ9WM;
 					};
 					FAED78201A63F3C70054BD81 = {
 						CreatedOnToolsVersion = 6.2;
@@ -215,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5E9A01A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib in Resources */,
 				FA059E861A7F9AC900442D30 /* ScrollViewExample.xib in Resources */,
 				FAED78171A63F3C70054BD81 /* Main.storyboard in Resources */,
 				FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */,
@@ -241,6 +278,10 @@
 				FABA23A01A92A3DE00373A76 /* ALTableViewCell.swift in Sources */,
 				FAED78101A63F3C70054BD81 /* AppDelegate.swift in Sources */,
 				FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */,
+				FA1109FF1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m in Sources */,
+				FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */,
+				FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */,
+				FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */,
 				FAED78121A63F3C70054BD81 /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,10 +407,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ALProblems/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ALProblems/ALProblems-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -377,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ALProblems/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ALProblems/ALProblems-Bridging-Header.h";
 			};
 			name = Release;
 		};
