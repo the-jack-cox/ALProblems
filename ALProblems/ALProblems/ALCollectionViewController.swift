@@ -28,14 +28,14 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // generate random cat pictures and text
         let words = text.componentsSeparatedByString(" ")
-        for i in 1...12 {
-            catImages.append(UIImage(named: "th-\(i)")!)
+        for i in 1...24 {
+            catImages.append(UIImage(named: "th-\((i % 12)+1)")!)
             
             var labelValue = ""
-            for j in 1...((random() % 30)+1) {
+            for j in 1...((random() % 20)+1) {
                 labelValue += words[random() % words.count]
                 labelValue += " "
             }
@@ -43,7 +43,7 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
         }
 
         var layout = self.collectionView?.collectionViewLayout as UICollectionViewFlowLayout
-        layout.estimatedItemSize = CGSize(width: 116, height: 116)
+        layout.estimatedItemSize = CGSize(width: 130, height: 50)
         
         // Register cell classes
         self.collectionView!.registerNib(UINib(nibName: "ALSelfSizingCollectionCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)

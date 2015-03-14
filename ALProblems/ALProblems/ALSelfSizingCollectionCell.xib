@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8dZ-hg-xyP" customClass="ALSelfSizingCollectionCell" customModule="ALProblems" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5D-P7-dNC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htP-lV-91n">
-                                <rect key="frame" x="114" y="47" width="198" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="31" translatesAutoresizingMaskIntoConstraints="NO" id="htP-lV-91n">
+                                <rect key="frame" x="66" y="50" width="56" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-vt-mmO">
-                                <rect key="frame" x="8" y="8" width="98" height="98"/>
+                                <rect key="frame" x="8" y="32" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4pp-vt-mmO" secondAttribute="height" multiplier="1:1" id="AgK-7g-cFE"/>
-                                    <constraint firstAttribute="width" secondItem="4pp-vt-mmO" secondAttribute="height" multiplier="1:1" id="JgR-ha-d7f"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="hQU-nf-rSn"/>
+                                    <constraint firstAttribute="width" constant="50" id="hQU-nf-rSn"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="4pp-vt-mmO" secondAttribute="bottom" constant="8" id="8OE-wS-Tho"/>
+                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" priority="100" constant="8" id="1LV-we-8Sj"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4pp-vt-mmO" secondAttribute="bottom" constant="8" id="8OE-wS-Tho"/>
                             <constraint firstItem="4pp-vt-mmO" firstAttribute="leading" secondItem="W5D-P7-dNC" secondAttribute="leading" constant="8" id="97f-Qx-VPw"/>
                             <constraint firstItem="htP-lV-91n" firstAttribute="leading" secondItem="4pp-vt-mmO" secondAttribute="trailing" constant="8" id="GnT-3W-dYb"/>
-                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="O9J-CL-gdt"/>
-                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="Q7w-x0-ubd"/>
-                            <constraint firstItem="htP-lV-91n" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" constant="47" id="WOx-Cj-S9o"/>
-                            <constraint firstAttribute="bottom" secondItem="htP-lV-91n" secondAttribute="bottom" constant="46" id="hMo-tN-sNe"/>
+                            <constraint firstAttribute="centerY" secondItem="htP-lV-91n" secondAttribute="centerY" id="NRE-SS-8sm"/>
+                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="O9J-CL-gdt"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Q7w-x0-ubd"/>
+                            <constraint firstItem="htP-lV-91n" firstAttribute="top" relation="greaterThanOrEqual" secondItem="W5D-P7-dNC" secondAttribute="top" constant="15" id="WOx-Cj-S9o"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="htP-lV-91n" secondAttribute="bottom" constant="15" id="hMo-tN-sNe"/>
                             <constraint firstAttribute="trailing" secondItem="htP-lV-91n" secondAttribute="trailing" constant="8" id="jkU-ls-Ij4"/>
+                            <constraint firstAttribute="centerY" secondItem="4pp-vt-mmO" secondAttribute="centerY" id="yXr-0g-sOJ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -54,12 +56,12 @@
                 <constraint firstItem="W5D-P7-dNC" firstAttribute="top" secondItem="8dZ-hg-xyP" secondAttribute="top" id="czE-Kb-YEX"/>
                 <constraint firstAttribute="bottom" secondItem="W5D-P7-dNC" secondAttribute="bottom" id="vZf-sc-FaN"/>
             </constraints>
-            <size key="customSize" width="459" height="108"/>
+            <size key="customSize" width="269" height="108"/>
             <connections>
                 <outlet property="catImageView" destination="4pp-vt-mmO" id="zut-AD-MxL"/>
                 <outlet property="titleLabel" destination="htP-lV-91n" id="GUH-sc-SqZ"/>
             </connections>
-            <point key="canvasLocation" x="383" y="341"/>
+            <point key="canvasLocation" x="288" y="341"/>
         </collectionViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
