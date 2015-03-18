@@ -20,7 +20,7 @@ class DebuggingDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.view.accessibilityIdentifier = "container"
+        self.view.accessibilityIdentifier = "container"
 
         self.createButtons()
         self.styleButtons()
@@ -47,14 +47,6 @@ class DebuggingDemoViewController: UIViewController {
         viewLowerRight.backgroundColor = UIColor.greenColor()
         views.append(viewLowerRight)
         
-        var label = UILabel()
-        viewLowerRight.addSubview(label)
-        label.text = "LR"
-        var c1 = NSLayoutConstraint(item: viewLowerRight, attribute: .CenterX, relatedBy: .Equal, toItem: label, attribute: .CenterX, multiplier: 1, constant: 0)
-        c1.identifier = "LR-centerX"
-        var c2 = NSLayoutConstraint(item: viewLowerRight, attribute: .CenterY, relatedBy: .Equal, toItem: label, attribute: .CenterY, multiplier: 1, constant: 0)
-        c1.identifier = "LR-centerY"
-        viewLowerRight.addConstraints([c1, c2])
     }
     
     func styleButtons() {
@@ -62,7 +54,7 @@ class DebuggingDemoViewController: UIViewController {
         for view in self.views {
             view.setTranslatesAutoresizingMaskIntoConstraints(false)
             view.layer.cornerRadius = 5
-            view.accessibilityIdentifier = "view-\(i)"
+            //view.accessibilityIdentifier = "view-\(i)"
             i++
         }
         
@@ -78,15 +70,15 @@ class DebuggingDemoViewController: UIViewController {
             ("lowerLeft",viewLowerLeft), ("lowerRight", viewLowerRight))
         
         //Horizontal constraints
-        let horizontalConstraints1 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(10)-[upperLeft(==150)][upperRight(==upperLeft)]-(10)-|", options: nil, metrics: nil, views: views)
+        let horizontalConstraints1 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(10)-[upperLeft][upperRight]-(10)-|", options: nil, metrics: nil, views: views)
         self.view.addConstraints(horizontalConstraints1)
-        let horizontalConstraints2 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(10)-[lowerLeft(==upperLeft)][lowerRight(==upperLeft)]-(10)-|", options: nil, metrics: nil, views: views)
+        let horizontalConstraints2 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(10)-[lowerLeft]-[lowerRight]-(10)-|", options: nil, metrics: nil, views: views)
         self.view.addConstraints(horizontalConstraints2)
         
         //Vertical constraints
-        let verticalConstraints1 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[upperLeft]-[lowerLeft]-|", options: nil, metrics: nil, views: views)
+        let verticalConstraints1 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(10)-[upperLeft]-[lowerLeft(==upperLeft)]-(10)-|", options: nil, metrics: nil, views: views)
         self.view.addConstraints(verticalConstraints1)
-        let verticalConstraints2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[upperRight]-[lowerRight]-|", options: nil, metrics: nil, views: views)
+        let verticalConstraints2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-(10)-[upperRight(==upperLeft)]-[lowerRight(==upperLeft)]-(10)-|", options: nil, metrics: nil, views: views)
         self.view.addConstraints(verticalConstraints2)
         
         

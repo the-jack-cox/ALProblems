@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -18,15 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="31" translatesAutoresizingMaskIntoConstraints="NO" id="htP-lV-91n">
-                                <rect key="frame" x="66" y="50" width="56" height="15"/>
+                                <rect key="frame" x="66" y="8" width="56" height="98"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-vt-mmO">
-                                <rect key="frame" x="8" y="32" width="50" height="50"/>
+                                <rect key="frame" x="8" y="8" width="50" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="4pp-vt-mmO" secondAttribute="height" multiplier="1:1" id="AgK-7g-cFE"/>
                                     <constraint firstAttribute="width" constant="50" id="hQU-nf-rSn"/>
                                 </constraints>
                             </imageView>
@@ -34,16 +32,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" priority="100" constant="8" id="1LV-we-8Sj"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4pp-vt-mmO" secondAttribute="bottom" constant="8" id="8OE-wS-Tho"/>
+                            <constraint firstAttribute="bottom" secondItem="4pp-vt-mmO" secondAttribute="bottom" constant="8" id="8OE-wS-Tho"/>
                             <constraint firstItem="4pp-vt-mmO" firstAttribute="leading" secondItem="W5D-P7-dNC" secondAttribute="leading" constant="8" id="97f-Qx-VPw"/>
                             <constraint firstItem="htP-lV-91n" firstAttribute="leading" secondItem="4pp-vt-mmO" secondAttribute="trailing" constant="8" id="GnT-3W-dYb"/>
+                            <constraint firstAttribute="width" priority="1" constant="130" id="JVh-CW-bZX"/>
                             <constraint firstAttribute="centerY" secondItem="htP-lV-91n" secondAttribute="centerY" id="NRE-SS-8sm"/>
-                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="O9J-CL-gdt"/>
+                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="O9J-CL-gdt"/>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Q7w-x0-ubd"/>
-                            <constraint firstItem="htP-lV-91n" firstAttribute="top" relation="greaterThanOrEqual" secondItem="W5D-P7-dNC" secondAttribute="top" constant="15" id="WOx-Cj-S9o"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="htP-lV-91n" secondAttribute="bottom" constant="15" id="hMo-tN-sNe"/>
+                            <constraint firstItem="htP-lV-91n" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="WOx-Cj-S9o"/>
+                            <constraint firstAttribute="height" priority="1" constant="114" id="bBq-nh-6qP"/>
+                            <constraint firstAttribute="bottom" secondItem="htP-lV-91n" secondAttribute="bottom" constant="8" id="hMo-tN-sNe"/>
                             <constraint firstAttribute="trailing" secondItem="htP-lV-91n" secondAttribute="trailing" constant="8" id="jkU-ls-Ij4"/>
                             <constraint firstAttribute="centerY" secondItem="4pp-vt-mmO" secondAttribute="centerY" id="yXr-0g-sOJ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ymC-aR-0C2"/>
                         </constraints>
                     </view>
                 </subviews>

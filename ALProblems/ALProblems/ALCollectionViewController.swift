@@ -35,7 +35,7 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
             catImages.append(UIImage(named: "th-\((i % 12)+1)")!)
             
             var labelValue = ""
-            for j in 1...((random() % 20)+1) {
+            for j in 1...((random() % 3)+1) {
                 labelValue += words[random() % words.count]
                 labelValue += " "
             }
@@ -43,7 +43,7 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
         }
 
         var layout = self.collectionView?.collectionViewLayout as UICollectionViewFlowLayout
-        layout.estimatedItemSize = CGSize(width: 130, height: 50)
+        layout.estimatedItemSize = CGSize(width: 110, height: 50)
         
         // Register cell classes
         self.collectionView!.registerNib(UINib(nibName: "ALSelfSizingCollectionCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
@@ -80,5 +80,6 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
     
         return cell
     }
+    
     
 }

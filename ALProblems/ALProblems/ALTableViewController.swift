@@ -30,7 +30,7 @@ class ALTableViewController: UITableViewController {
         // generate random cat pictures and text
         let words = newText.componentsSeparatedByString(" ")
         for i in 1...12 {
-            catImages.append(UIImage(named: "th-\(i)")!)
+            catImages.append(UIImage(named:"th-\(i)")!)
             
             var labelValue = ""
             for j in 1...((random() % 30)+1) {

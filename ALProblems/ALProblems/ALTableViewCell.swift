@@ -22,13 +22,13 @@ class ALTableViewCell: UITableViewCell {
         title.layer.borderWidth = 1.0
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        title.preferredMaxLayoutWidth = title.frame.size.width
-        
-        super.layoutSubviews()
-    }
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        
+//        title.preferredMaxLayoutWidth = title.frame.size.width
+//        
+//        super.layoutSubviews()
+//    }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

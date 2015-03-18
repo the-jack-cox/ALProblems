@@ -20,6 +20,7 @@
 		FAED78191A63F3C70054BD81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAED78181A63F3C70054BD81 /* Images.xcassets */; };
 		FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAED781A1A63F3C70054BD81 /* LaunchScreen.xib */; };
 		FAED78281A63F3C70054BD81 /* ALProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED78271A63F3C70054BD81 /* ALProblemsTests.swift */; };
+		FAEEB04D1AB481D80063AC10 /* UIView+AmbiguityHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */; };
 		FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */; };
 		FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */; };
 		FAF5E9A01A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */; };
@@ -55,6 +56,8 @@
 		FAED78211A63F3C70054BD81 /* ALProblemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALProblemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAED78261A63F3C70054BD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAED78271A63F3C70054BD81 /* ALProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALProblemsTests.swift; sourceTree = "<group>"; };
+		FAEEB04B1AB481D80063AC10 /* UIView+AmbiguityHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AmbiguityHelpers.h"; sourceTree = "<group>"; };
+		FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AmbiguityHelpers.m"; sourceTree = "<group>"; };
 		FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCollectionViewController.swift; sourceTree = "<group>"; };
 		FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSelfSizingCollectionCell.swift; sourceTree = "<group>"; };
 		FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALSelfSizingCollectionCell.xib; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */,
+				FAEEB04B1AB481D80063AC10 /* UIView+AmbiguityHelpers.h */,
+				FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */,
 			);
 			name = Debugging;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */,
 				FA1109FF1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m in Sources */,
 				FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */,
+				FAEEB04D1AB481D80063AC10 /* UIView+AmbiguityHelpers.m in Sources */,
 				FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */,
 				FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */,
 				FAED78121A63F3C70054BD81 /* ScrollViewController.swift in Sources */,
