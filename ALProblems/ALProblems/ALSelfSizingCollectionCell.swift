@@ -10,7 +10,7 @@ import UIKit
 
 class ALSelfSizingCollectionCell: UICollectionViewCell {
    
-    @IBOutlet weak var catImageView: UIImageView!
-    @IBOutlet weak var titleLabel:UILabel!
+    @IBOutlet weak var catImageView: UIImageView?
+    @IBOutlet weak var titleLabel:UILabel?
     
 }

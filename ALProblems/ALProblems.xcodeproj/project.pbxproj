@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA059E861A7F9AC900442D30 /* ScrollViewExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */; };
 		FA1109FF1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */; };
+		FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F13A41ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib */; };
 		FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */; };
 		FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABA239A1A92A18300373A76 /* ALTableViewCell.xib */; };
 		FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */; };
@@ -41,6 +42,7 @@
 		FA1109FC1AAFB925000F282A /* ALProblems-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALProblems-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA1109FD1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+ConstraintID.h"; sourceTree = "<group>"; };
 		FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+ConstraintID.m"; sourceTree = "<group>"; };
+		FA1F13A41ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALSimpleSelfSizingCollectionCell.xib; sourceTree = "<group>"; };
 		FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebuggingDemoViewController.swift; sourceTree = "<group>"; };
 		FABA239A1A92A18300373A76 /* ALTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALTableViewCell.xib; sourceTree = "<group>"; };
 		FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTableViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */,
 				FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */,
 				FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */,
+				FA1F13A41ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib */,
 			);
 			name = Collections;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				FA059E861A7F9AC900442D30 /* ScrollViewExample.xib in Resources */,
 				FAED78171A63F3C70054BD81 /* Main.storyboard in Resources */,
 				FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */,
+				FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */,
 				FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */,
 				FAED78191A63F3C70054BD81 /* Images.xcassets in Resources */,
 			);

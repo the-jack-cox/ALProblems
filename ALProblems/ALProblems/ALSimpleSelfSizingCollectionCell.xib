@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,27 +16,16 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5D-P7-dNC">
                         <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="40" translatesAutoresizingMaskIntoConstraints="NO" id="htP-lV-91n">
-                                <rect key="frame" x="86" y="7" width="35.5" height="98.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-vt-mmO">
-                                <rect key="frame" x="8" y="8" width="70.5" height="97.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple_medium" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-vt-mmO">
+                                <rect key="frame" x="8" y="8" width="114" height="97.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="1LV-we-8Sj"/>
                             <constraint firstItem="4pp-vt-mmO" firstAttribute="leading" secondItem="W5D-P7-dNC" secondAttribute="leading" constant="8" id="97f-Qx-VPw"/>
-                            <constraint firstItem="htP-lV-91n" firstAttribute="leading" secondItem="4pp-vt-mmO" secondAttribute="trailing" constant="8" id="GnT-3W-dYb"/>
-                            <constraint firstItem="4pp-vt-mmO" firstAttribute="width" secondItem="htP-lV-91n" secondAttribute="width" multiplier="2" id="KFQ-ua-uic"/>
-                            <constraint firstAttribute="centerY" secondItem="htP-lV-91n" secondAttribute="centerY" id="NRE-SS-8sm"/>
                             <constraint firstAttribute="bottom" secondItem="4pp-vt-mmO" secondAttribute="bottom" constant="8" id="OaK-S0-uYY"/>
-                            <constraint firstItem="htP-lV-91n" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" constant="8" id="WOx-Cj-S9o"/>
-                            <constraint firstAttribute="bottom" secondItem="htP-lV-91n" secondAttribute="bottom" constant="8" id="hMo-tN-sNe"/>
-                            <constraint firstAttribute="trailing" secondItem="htP-lV-91n" secondAttribute="trailing" constant="8" id="jkU-ls-Ij4"/>
+                            <constraint firstAttribute="trailing" secondItem="4pp-vt-mmO" secondAttribute="trailing" constant="8" id="S58-KY-xK0"/>
                             <constraint firstAttribute="centerY" secondItem="4pp-vt-mmO" secondAttribute="centerY" id="yXr-0g-sOJ"/>
                         </constraints>
                     </view>
@@ -51,14 +39,16 @@
                 <constraint firstItem="W5D-P7-dNC" firstAttribute="top" secondItem="8dZ-hg-xyP" secondAttribute="top" id="czE-Kb-YEX"/>
                 <constraint firstAttribute="bottom" secondItem="W5D-P7-dNC" secondAttribute="bottom" id="vZf-sc-FaN"/>
             </constraints>
-            <size key="customSize" width="269" height="108"/>
+            <size key="customSize" width="192" height="108"/>
             <connections>
                 <outlet property="catImageView" destination="4pp-vt-mmO" id="zut-AD-MxL"/>
-                <outlet property="titleLabel" destination="htP-lV-91n" id="GUH-sc-SqZ"/>
             </connections>
             <point key="canvasLocation" x="288" y="341"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="apple_medium" width="60" height="74"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 let reuseIdentifier = "Cell"
 
@@ -48,7 +49,7 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
             }
             //catImages.append(UIImage(named: "th-\((i % 12)+1)")!)
             
-            var labelValue = ""
+            var labelValue = "\(i):"
             for j in 1...((random() % 3)+1) {
                 labelValue += words[random() % words.count]
                 labelValue += " "
@@ -89,8 +90,14 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
     
         // Configure the cell
         cell.contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        cell.catImageView.image = self.catImages[indexPath.item]
-        cell.titleLabel.text = labelValues[indexPath.item]
+        cell.catImageView?.image = self.catImages[indexPath.item]
+        cell.titleLabel?.text = labelValues[indexPath.item]
+
+        cell.catImageView?.layer.borderColor = UIColor.blueColor().CGColor
+        cell.catImageView?.layer.borderWidth = 1.0
+
+        cell.titleLabel?.layer.borderColor = UIColor.blueColor().CGColor
+        cell.titleLabel?.layer.borderWidth = 1.0
     
         return cell
     }
