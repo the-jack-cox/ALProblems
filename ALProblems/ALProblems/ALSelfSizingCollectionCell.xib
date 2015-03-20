@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,26 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="40" translatesAutoresizingMaskIntoConstraints="NO" id="htP-lV-91n">
-                                <rect key="frame" x="81.5" y="8.5" width="40" height="97.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="Rha-5K-GHe"/>
-                                </constraints>
+                                <rect key="frame" x="86" y="8" width="35.5" height="97.5"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-vt-mmO">
-                                <rect key="frame" x="8" y="8" width="66" height="98"/>
+                                <rect key="frame" x="8" y="8.5" width="70.5" height="97.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" priority="300" constant="8" id="1LV-we-8Sj"/>
+                            <constraint firstItem="4pp-vt-mmO" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" priority="800" constant="8" id="1LV-we-8Sj"/>
                             <constraint firstItem="4pp-vt-mmO" firstAttribute="leading" secondItem="W5D-P7-dNC" secondAttribute="leading" constant="8" id="97f-Qx-VPw"/>
                             <constraint firstItem="htP-lV-91n" firstAttribute="leading" secondItem="4pp-vt-mmO" secondAttribute="trailing" constant="8" id="GnT-3W-dYb"/>
                             <constraint firstAttribute="width" priority="1" constant="130" id="JVh-CW-bZX"/>
+                            <constraint firstItem="4pp-vt-mmO" firstAttribute="width" secondItem="htP-lV-91n" secondAttribute="width" multiplier="2" id="KFQ-ua-uic"/>
                             <constraint firstAttribute="centerY" secondItem="htP-lV-91n" secondAttribute="centerY" id="NRE-SS-8sm"/>
-                            <constraint firstAttribute="bottom" secondItem="4pp-vt-mmO" secondAttribute="bottom" priority="300" constant="8" id="OaK-S0-uYY"/>
+                            <constraint firstAttribute="bottom" secondItem="4pp-vt-mmO" secondAttribute="bottom" priority="800" constant="8" id="OaK-S0-uYY"/>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Q7w-x0-ubd"/>
                             <constraint firstItem="htP-lV-91n" firstAttribute="top" secondItem="W5D-P7-dNC" secondAttribute="top" priority="300" constant="8" id="WOx-Cj-S9o"/>
                             <constraint firstAttribute="height" priority="1" constant="114" id="bBq-nh-6qP"/>
