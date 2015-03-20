@@ -32,7 +32,21 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
         // generate random cat pictures and text
         let words = text.componentsSeparatedByString(" ")
         for i in 1...24 {
-            catImages.append(UIImage(named: "th-\((i % 12)+1)")!)
+            let rand = arc4random_uniform(3)
+            switch rand {
+            case 0:
+                catImages.append(UIImage(named: "apple_small")!)
+                break
+            case 1:
+                catImages.append(UIImage(named: "apple_medium")!)
+                break
+            case 2:
+                catImages.append(UIImage(named: "apple_large")!)
+                break
+            default:
+                break
+            }
+            //catImages.append(UIImage(named: "th-\((i % 12)+1)")!)
             
             var labelValue = ""
             for j in 1...((random() % 3)+1) {
@@ -43,7 +57,7 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
         }
 
         var layout = self.collectionView?.collectionViewLayout as UICollectionViewFlowLayout
-        layout.estimatedItemSize = CGSize(width: 110, height: 50)
+        layout.estimatedItemSize = CGSize(width: 110, height: 110)
         
         // Register cell classes
         self.collectionView!.registerNib(UINib(nibName: "ALSelfSizingCollectionCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
