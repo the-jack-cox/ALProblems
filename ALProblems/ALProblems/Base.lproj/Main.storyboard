@@ -77,7 +77,6 @@
                     <tabBarItem key="tabBarItem" title="Scroll Views" image="1107-vertical-swipe" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="firstLabel" destination="UQy-Vw-4dU" id="91l-Jh-IUE"/>
-                        <outletCollection property="labels" destination="UQy-Vw-4dU" collectionClass="NSMutableArray" id="Vw6-Uv-g5z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -136,6 +135,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessbilityId" value="container"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Debugging" image="972-bug" id="FAK-Rp-z6a"/>

@@ -20,7 +20,7 @@ class DebuggingDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.accessibilityIdentifier = "container"
+        //self.view.accessibilityIdentifier = "container"
 
         self.createButtons()
         self.styleButtons()

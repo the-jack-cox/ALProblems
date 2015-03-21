@@ -63,8 +63,8 @@ class ALTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        cell.imageContent.image = self.catImages[indexPath.row]
-        cell.title.text = labelValues[indexPath.row]
+        cell.imageContent?.image = self.catImages[indexPath.row]
+        cell.title?.text = labelValues[indexPath.row]
         return cell
     }
 }

@@ -12,14 +12,14 @@ import QuartzCore
 class ALTableViewCell: UITableViewCell {
 
 
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var imageContent: UIImageView!
+    @IBOutlet weak var title: UILabel?
+    @IBOutlet weak var imageContent: UIImageView?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
-        title.layer.borderColor = UIColor.grayColor().CGColor
-        title.layer.borderWidth = 1.0
+        title?.layer.borderColor = UIColor.grayColor().CGColor
+        title?.layer.borderWidth = 1.0
     }
     
 //    override func layoutSubviews() {
