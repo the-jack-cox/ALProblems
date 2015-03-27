@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Scroll Views-->
@@ -18,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIg-dO-ibK">
-                                <rect key="frame" x="16" y="51" width="568" height="447"/>
+                                <rect key="frame" x="10" y="51" width="580" height="447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmI-xU-Kby" userLabel="ScrollableContent">
-                                        <rect key="frame" x="0.0" y="0.0" width="568" height="181"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="180.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-Vw-4dU">
-                                                <rect key="frame" x="10" y="41" width="101" height="20"/>
+                                                <rect key="frame" x="10" y="41" width="101" height="19.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3f-aX-0Eb">
-                                                <rect key="frame" x="250" y="122" width="68" height="30"/>
+                                                <rect key="frame" x="256" y="121.5" width="68" height="30"/>
                                                 <state key="normal" title="More Text">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -64,14 +63,20 @@
                                     <constraint firstItem="OmI-xU-Kby" firstAttribute="top" secondItem="xIg-dO-ibK" secondAttribute="top" id="Nvx-Sv-dEG"/>
                                     <constraint firstItem="OmI-xU-Kby" firstAttribute="width" secondItem="xIg-dO-ibK" secondAttribute="width" id="r3c-eM-r5J"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r3c-eM-r5J"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="xIg-dO-ibK" secondAttribute="bottom" constant="53" id="1hb-bV-EYU"/>
-                            <constraint firstItem="xIg-dO-ibK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Xbj-vX-b7N"/>
+                            <constraint firstItem="xIg-dO-ibK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="10" id="Xbj-vX-b7N"/>
                             <constraint firstItem="xIg-dO-ibK" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="31" id="dps-PH-kb5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xIg-dO-ibK" secondAttribute="trailing" id="kap-L3-EBc"/>
+                            <constraint firstAttribute="trailing" secondItem="xIg-dO-ibK" secondAttribute="trailing" constant="10" id="kap-L3-EBc"/>
+                            <constraint firstAttribute="width" secondItem="OmI-xU-Kby" secondAttribute="width" constant="20" id="nJJ-mX-58H"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Scroll Views" image="1107-vertical-swipe" id="acW-dT-cKf"/>
