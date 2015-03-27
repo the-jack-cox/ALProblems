@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA059E861A7F9AC900442D30 /* ScrollViewExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */; };
 		FA1109FF1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */; };
 		FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F13A41ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib */; };
 		FA1F13A81ABCDAC00029A18D /* UIView+IBHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewExample.xib; sourceTree = "<group>"; };
 		FA1109FC1AAFB925000F282A /* ALProblems-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALProblems-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA1109FD1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+ConstraintID.h"; sourceTree = "<group>"; };
 		FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+ConstraintID.m"; sourceTree = "<group>"; };
@@ -84,12 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA286FC81AC586F000BD167D /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FAED78111A63F3C70054BD81 /* ScrollViewController.swift */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
+		FA286FC91AC5872C00BD167D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA1109FD1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.h */,
+				FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */,
+				FA1F13A61ABCDAC00029A18D /* UIView+IBHelpers.h */,
+				FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */,
+				FAEEB04B1AB481D80063AC10 /* UIView+AmbiguityHelpers.h */,
+				FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		FA443EE31AAB57920091446D /* Debugging */ = {
 			isa = PBXGroup;
 			children = (
 				FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */,
-				FAEEB04B1AB481D80063AC10 /* UIView+AmbiguityHelpers.h */,
-				FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */,
 			);
 			name = Debugging;
 			sourceTree = "<group>";
@@ -125,21 +142,15 @@
 		FAED780C1A63F3C70054BD81 /* ALProblems */ = {
 			isa = PBXGroup;
 			children = (
-				FA443EE31AAB57920091446D /* Debugging */,
 				FAED780F1A63F3C70054BD81 /* AppDelegate.swift */,
-				FAED78111A63F3C70054BD81 /* ScrollViewController.swift */,
 				FAED78151A63F3C70054BD81 /* Main.storyboard */,
 				FAED78181A63F3C70054BD81 /* Images.xcassets */,
 				FAF5E9981A9FC51B00853BB7 /* Collections */,
 				FABA239E1A92A1E500373A76 /* TableViews */,
-				FAED781A1A63F3C70054BD81 /* LaunchScreen.xib */,
+				FA443EE31AAB57920091446D /* Debugging */,
 				FAED780D1A63F3C70054BD81 /* Supporting Files */,
-				FA059E851A7F9AC900442D30 /* ScrollViewExample.xib */,
-				FA1109FD1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.h */,
-				FA1109FE1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m */,
-				FA1F13A61ABCDAC00029A18D /* UIView+IBHelpers.h */,
-				FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */,
-				FA1109FC1AAFB925000F282A /* ALProblems-Bridging-Header.h */,
+				FA286FC81AC586F000BD167D /* ScrollView */,
+				FA286FC91AC5872C00BD167D /* Helpers */,
 			);
 			path = ALProblems;
 			sourceTree = "<group>";
@@ -147,6 +158,8 @@
 		FAED780D1A63F3C70054BD81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA1109FC1AAFB925000F282A /* ALProblems-Bridging-Header.h */,
+				FAED781A1A63F3C70054BD81 /* LaunchScreen.xib */,
 				FAED780E1A63F3C70054BD81 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -262,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF5E9A01A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib in Resources */,
-				FA059E861A7F9AC900442D30 /* ScrollViewExample.xib in Resources */,
 				FAED78171A63F3C70054BD81 /* Main.storyboard in Resources */,
 				FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */,
 				FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */,
