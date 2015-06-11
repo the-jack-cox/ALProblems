@@ -11,7 +11,7 @@ import QuartzCore
 
 let reuseIdentifier = "Cell"
 
-class ALCollectionViewController: UICollectionViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ALCollectionViewController: UICollectionViewController {
     
     var catImages:[UIImage] = []
     var labelValues:[String] = []
@@ -19,7 +19,7 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
     let text = "Gummi bears muffin cotton candy lollipop. Cake pudding sweet candy gummi bears sweet biscuit tart. Lollipop tart wafer sugar plum."
     
     
-    override init() {
+    init() {
         super.init(nibName: "ALCollectionViewController", bundle: nil)
     }
 
@@ -50,14 +50,14 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
             //catImages.append(UIImage(named: "th-\((i % 12)+1)")!)
             
             var labelValue = "\(i):"
-            for j in 1...((random() % 3)+1) {
+            for _ in 1...((random() % 3)+1) {
                 labelValue += words[random() % words.count]
                 labelValue += " "
             }
             labelValues.append(labelValue)
         }
 
-        var layout = self.collectionView?.collectionViewLayout as UICollectionViewFlowLayout
+        let layout = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         layout.estimatedItemSize = CGSize(width: 174, height: 90)
         
         // Register cell classes
@@ -86,10 +86,10 @@ class ALCollectionViewController: UICollectionViewController, UICollectionViewDa
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as ALSelfSizingCollectionCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ALSelfSizingCollectionCell
     
         // Configure the cell
-        cell.contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        //cell.contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
         cell.catImageView?.image = self.catImages[indexPath.item]
         cell.titleLabel?.text = labelValues[indexPath.item]
 

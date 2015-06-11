@@ -33,7 +33,7 @@ class ALTableViewController: UITableViewController {
             catImages.append(UIImage(named:"th-\(i)")!)
             
             var labelValue = ""
-            for j in 1...((random() % 30)+1) {
+            for _ in 1...((random() % 30)+1) {
                 labelValue += words[random() % words.count]
                 labelValue += " "
             }
@@ -59,7 +59,7 @@ class ALTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ALTableViewCell", forIndexPath: indexPath) as ALTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ALTableViewCell", forIndexPath: indexPath) as! ALTableViewCell
 
         // Configure the cell...
         
