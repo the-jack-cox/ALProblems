@@ -11,6 +11,7 @@
 		FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F13A41ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib */; };
 		FA1F13A81ABCDAC00029A18D /* UIView+IBHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */; };
 		FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */; };
+		FA6198CA1B38B74E00DAF6BB /* ALStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6198C91B38B74E00DAF6BB /* ALStackViewController.swift */; };
 		FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABA239A1A92A18300373A76 /* ALTableViewCell.xib */; };
 		FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */; };
 		FABA23A01A92A3DE00373A76 /* ALTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA239F1A92A3DE00373A76 /* ALTableViewCell.swift */; };
@@ -21,6 +22,7 @@
 		FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAED781A1A63F3C70054BD81 /* LaunchScreen.xib */; };
 		FAED78281A63F3C70054BD81 /* ALProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED78271A63F3C70054BD81 /* ALProblemsTests.swift */; };
 		FAEEB04D1AB481D80063AC10 /* UIView+AmbiguityHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */; };
+		FAF1D7111B30C9E1000C9882 /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF1D70F1B30C9E1000C9882 /* StackView.storyboard */; };
 		FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */; };
 		FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */; };
 		FAF5E9A01A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */; };
@@ -44,6 +46,7 @@
 		FA1F13A61ABCDAC00029A18D /* UIView+IBHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBHelpers.h"; sourceTree = "<group>"; };
 		FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBHelpers.m"; sourceTree = "<group>"; };
 		FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebuggingDemoViewController.swift; sourceTree = "<group>"; };
+		FA6198C91B38B74E00DAF6BB /* ALStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALStackViewController.swift; sourceTree = "<group>"; };
 		FABA239A1A92A18300373A76 /* ALTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALTableViewCell.xib; sourceTree = "<group>"; };
 		FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTableViewController.swift; sourceTree = "<group>"; };
 		FABA239F1A92A3DE00373A76 /* ALTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTableViewCell.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		FAED78271A63F3C70054BD81 /* ALProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALProblemsTests.swift; sourceTree = "<group>"; };
 		FAEEB04B1AB481D80063AC10 /* UIView+AmbiguityHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AmbiguityHelpers.h"; sourceTree = "<group>"; };
 		FAEEB04C1AB481D80063AC10 /* UIView+AmbiguityHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AmbiguityHelpers.m"; sourceTree = "<group>"; };
+		FAF1D7101B30C9E1000C9882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StackView.storyboard; sourceTree = "<group>"; };
 		FAF5E9991A9FC5B600853BB7 /* ALCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCollectionViewController.swift; sourceTree = "<group>"; };
 		FAF5E99D1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSelfSizingCollectionCell.swift; sourceTree = "<group>"; };
 		FAF5E99F1A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALSelfSizingCollectionCell.xib; sourceTree = "<group>"; };
@@ -118,6 +122,15 @@
 			name = Debugging;
 			sourceTree = "<group>";
 		};
+		FA6198C81B38B73200DAF6BB /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1D70F1B30C9E1000C9882 /* StackView.storyboard */,
+				FA6198C91B38B74E00DAF6BB /* ALStackViewController.swift */,
+			);
+			name = StackView;
+			sourceTree = "<group>";
+		};
 		FABA239E1A92A1E500373A76 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 			children = (
 				FAED780F1A63F3C70054BD81 /* AppDelegate.swift */,
 				FAED78151A63F3C70054BD81 /* Main.storyboard */,
+				FA6198C81B38B73200DAF6BB /* StackView */,
 				FAED78181A63F3C70054BD81 /* Images.xcassets */,
 				FAF5E9981A9FC51B00853BB7 /* Collections */,
 				FABA239E1A92A1E500373A76 /* TableViews */,
@@ -286,6 +300,7 @@
 				FAF5E9A01A9FC62200853BB7 /* ALSelfSizingCollectionCell.xib in Resources */,
 				FAED78171A63F3C70054BD81 /* Main.storyboard in Resources */,
 				FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */,
+				FAF1D7111B30C9E1000C9882 /* StackView.storyboard in Resources */,
 				FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */,
 				FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */,
 				FAED78191A63F3C70054BD81 /* Images.xcassets in Resources */,
@@ -311,6 +326,7 @@
 				FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */,
 				FA1109FF1AAFB925000F282A /* NSLayoutConstraint+ConstraintID.m in Sources */,
 				FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */,
+				FA6198CA1B38B74E00DAF6BB /* ALStackViewController.swift in Sources */,
 				FAEEB04D1AB481D80063AC10 /* UIView+AmbiguityHelpers.m in Sources */,
 				FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */,
 				FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */,
@@ -352,6 +368,14 @@
 				FAED781B1A63F3C70054BD81 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FAF1D70F1B30C9E1000C9882 /* StackView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF1D7101B30C9E1000C9882 /* Base */,
+			);
+			name = StackView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

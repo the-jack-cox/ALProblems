@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Atw-w6-cUr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--Stack-->
+        <scene sceneID="9L3-1P-dmZ">
+            <objects>
+                <viewController title="Stack" extendedLayoutIncludesOpaqueBars="YES" id="Atw-w6-cUr" customClass="ALStackViewController" customModule="ALProblems" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gHd-fr-8KX"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNN-na-bTp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="izF-Sl-oKE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h38-mi-ejq">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RTb-uf-PTr">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g3-8n-qMq">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytn-LA-a8b">
+                                                <rect key="frame" x="0.0" y="32" width="600" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPU-cC-iYA">
+                                                <rect key="frame" x="0.0" y="64" width="600" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b6z-CN-rKv">
+                                                <rect key="frame" x="0.0" y="96" width="600" height="32"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFD-rO-R1P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="Add"/>
+                                                        <connections>
+                                                            <action selector="addItem:" destination="Atw-w6-cUr" eventType="touchUpInside" id="JVy-SJ-mG3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-fI-icb">
+                                                        <rect key="frame" x="200" y="0.0" width="200" height="32"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="Remove"/>
+                                                        <connections>
+                                                            <action selector="removeItem:" destination="Atw-w6-cUr" eventType="touchUpInside" id="arg-Em-odU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOX-cN-8Fj">
+                                                        <rect key="frame" x="400" y="0.0" width="200" height="32"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="Go Crazy"/>
+                                                        <connections>
+                                                            <action selector="goCrazy:" destination="Atw-w6-cUr" eventType="touchUpInside" id="714-gm-dgj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RTb-uf-PTr" secondAttribute="bottom" id="Dpc-A6-Td1"/>
+                                    <constraint firstItem="RTb-uf-PTr" firstAttribute="leading" secondItem="h38-mi-ejq" secondAttribute="leading" id="FRU-u0-3VB"/>
+                                    <constraint firstItem="RTb-uf-PTr" firstAttribute="top" secondItem="h38-mi-ejq" secondAttribute="top" id="lKS-VA-Xaj"/>
+                                    <constraint firstAttribute="trailing" secondItem="RTb-uf-PTr" secondAttribute="trailing" id="zzQ-Rq-lfG"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h38-mi-ejq" firstAttribute="leading" secondItem="izF-Sl-oKE" secondAttribute="leading" id="8ax-Qn-TMf"/>
+                            <constraint firstItem="RTb-uf-PTr" firstAttribute="width" secondItem="izF-Sl-oKE" secondAttribute="width" id="O6F-RC-cfp"/>
+                            <constraint firstItem="h38-mi-ejq" firstAttribute="top" secondItem="izF-Sl-oKE" secondAttribute="top" constant="20" id="bmT-BW-rlz"/>
+                            <constraint firstAttribute="trailing" secondItem="h38-mi-ejq" secondAttribute="trailing" id="hzA-W9-NxO"/>
+                            <constraint firstAttribute="bottom" secondItem="h38-mi-ejq" secondAttribute="bottom" constant="49" id="vH0-GW-pwm"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Stack" image="1199-file-type-tabular-data" id="iiF-3a-WoV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="stackView" destination="RTb-uf-PTr" id="Tvl-IZ-Mpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lM8-iK-Ci5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="1606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1199-file-type-tabular-data" width="20" height="28"/>
+    </resources>
+</document>
