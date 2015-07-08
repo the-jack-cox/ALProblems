@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AAw-Ns-cJt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--Anchor-->
+        <scene sceneID="iK8-lv-DGI">
+            <objects>
+                <viewController storyboardIdentifier="anchor" id="AAw-Ns-cJt" customClass="ALAnchorViewController" customModule="ALProblems" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lJI-iE-hj5"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJO-Wf-Vvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3V3-Wg-eTl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Anchor" image="998-sail-boat" id="xkK-qv-AFM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZB-Fy-Swv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="998-sail-boat" width="28" height="26"/>
+    </resources>
+</document>

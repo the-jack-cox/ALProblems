@@ -11,6 +11,8 @@
 		FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F13A41ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib */; };
 		FA1F13A81ABCDAC00029A18D /* UIView+IBHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */; };
 		FA443EE51AAB57B40091446D /* DebuggingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */; };
+		FA557B741B39B45A0054CA5D /* ALAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA557B721B39B45A0054CA5D /* ALAnchorViewController.swift */; };
+		FA557B771B39B47A0054CA5D /* ALAnchorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA557B761B39B47A0054CA5D /* ALAnchorViewController.storyboard */; };
 		FA6198CA1B38B74E00DAF6BB /* ALStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6198C91B38B74E00DAF6BB /* ALStackViewController.swift */; };
 		FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABA239A1A92A18300373A76 /* ALTableViewCell.xib */; };
 		FABA239D1A92A1DC00373A76 /* ALTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */; };
@@ -46,6 +48,8 @@
 		FA1F13A61ABCDAC00029A18D /* UIView+IBHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBHelpers.h"; sourceTree = "<group>"; };
 		FA1F13A71ABCDAC00029A18D /* UIView+IBHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBHelpers.m"; sourceTree = "<group>"; };
 		FA443EE41AAB57B40091446D /* DebuggingDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebuggingDemoViewController.swift; sourceTree = "<group>"; };
+		FA557B721B39B45A0054CA5D /* ALAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAnchorViewController.swift; sourceTree = "<group>"; };
+		FA557B761B39B47A0054CA5D /* ALAnchorViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ALAnchorViewController.storyboard; sourceTree = "<group>"; };
 		FA6198C91B38B74E00DAF6BB /* ALStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALStackViewController.swift; sourceTree = "<group>"; };
 		FABA239A1A92A18300373A76 /* ALTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALTableViewCell.xib; sourceTree = "<group>"; };
 		FABA239C1A92A1DC00373A76 /* ALTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTableViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,15 @@
 			name = Debugging;
 			sourceTree = "<group>";
 		};
+		FA557B711B39B4430054CA5D /* AnchorAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FA557B721B39B45A0054CA5D /* ALAnchorViewController.swift */,
+				FA557B761B39B47A0054CA5D /* ALAnchorViewController.storyboard */,
+			);
+			name = AnchorAPI;
+			sourceTree = "<group>";
+		};
 		FA6198C81B38B73200DAF6BB /* StackView */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +175,7 @@
 		FAED780C1A63F3C70054BD81 /* ALProblems */ = {
 			isa = PBXGroup;
 			children = (
+				FA557B711B39B4430054CA5D /* AnchorAPI */,
 				FAED780F1A63F3C70054BD81 /* AppDelegate.swift */,
 				FAED78151A63F3C70054BD81 /* Main.storyboard */,
 				FA6198C81B38B73200DAF6BB /* StackView */,
@@ -302,6 +316,7 @@
 				FAED781C1A63F3C70054BD81 /* LaunchScreen.xib in Resources */,
 				FAF1D7111B30C9E1000C9882 /* StackView.storyboard in Resources */,
 				FA1F13A51ABC9A400029A18D /* ALSimpleSelfSizingCollectionCell.xib in Resources */,
+				FA557B771B39B47A0054CA5D /* ALAnchorViewController.storyboard in Resources */,
 				FABA239B1A92A18300373A76 /* ALTableViewCell.xib in Resources */,
 				FAED78191A63F3C70054BD81 /* Images.xcassets in Resources */,
 			);
@@ -331,6 +346,7 @@
 				FAF5E99B1A9FC5B600853BB7 /* ALCollectionViewController.swift in Sources */,
 				FAF5E99E1A9FC61200853BB7 /* ALSelfSizingCollectionCell.swift in Sources */,
 				FA1F13A81ABCDAC00029A18D /* UIView+IBHelpers.m in Sources */,
+				FA557B741B39B45A0054CA5D /* ALAnchorViewController.swift in Sources */,
 				FAED78121A63F3C70054BD81 /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

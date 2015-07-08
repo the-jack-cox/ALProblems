@@ -24,6 +24,7 @@ class ALTableViewCell: UITableViewCell {
     
 //    override func layoutSubviews() {
 //        super.layoutSubviews()
+//        print("Laying out cell \(self)")
 //        
 //        title?.preferredMaxLayoutWidth = title!.frame.size.width
 //        
