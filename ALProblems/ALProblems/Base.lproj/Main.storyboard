@@ -20,16 +20,16 @@
                                 <rect key="frame" x="10" y="51" width="580" height="447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmI-xU-Kby" userLabel="ScrollableContent">
-                                        <rect key="frame" x="0.0" y="0.0" width="580" height="180.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="181"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-Vw-4dU" userLabel="My Label">
-                                                <rect key="frame" x="10" y="41" width="102" height="19.5"/>
+                                                <rect key="frame" x="10" y="41" width="102" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3f-aX-0Eb">
-                                                <rect key="frame" x="255.5" y="122" width="69" height="30"/>
+                                                <rect key="frame" x="256" y="122" width="69" height="30"/>
                                                 <state key="normal" title="More Text">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
