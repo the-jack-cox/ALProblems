@@ -23,7 +23,7 @@ class ALCollectionViewController: UICollectionViewController {
         super.init(nibName: "ALCollectionViewController", bundle: nil)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     

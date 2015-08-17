@@ -33,7 +33,7 @@ class ALTableViewController: UITableViewController {
             catImages.append(UIImage(named:"th-\(i)")!)
             
             var labelValue = ""
-            for _ in 1...((random() % 30)+1) {
+            for _ in 1...20 {
                 labelValue += words[random() % words.count]
                 labelValue += " "
             }
